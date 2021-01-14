@@ -15,8 +15,10 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            Song <br />
-            JaeHyeok
+            <a href="#">
+                Song <br />
+                JaeHyeok
+            </a>
         </div>
 
 
@@ -30,51 +32,52 @@
 
     <section>
         <ul>
-            <li  class="active_project">
+            <li  class="title_list active_project">
                 <a href="#">
                     <img src="./img/main/title_txt/amore.png" class="title_txt" alt="아모레퍼시픽">
                     <div class="title_img"></div>
                 </a>
-                <span>HTML, CSS, JavaScript, Photoshop</span>
+                <span class="title_tool">HTML, CSS, JavaScript, Photoshop</span>
             </li>
             
-            <li>
+            <li class="title_list">
                 <a href="#">
                     <img src="./img/main/title_txt/inter.png" class="title_txt" alt="인터스텔라">
                     <div class="title_img"></div>
                 </a>
-                <span>HTML, CSS, JavaScript, Three.js, Illustrator</span>
+                <span class="title_tool">HTML, CSS, JavaScript, Three.js, Illustrator</span>
             </li>
 
-            <li>
+            <li class="title_list">
                 <a href="#">
                     <img src="./img/main/title_txt/port.png" class="title_txt" alt="포트폴리오">
                     <div class="title_img"></div>
                 </a>
-                <span>HTML, CSS, JavaScript, jQuery, Three.js, Illustrator</span>
+                <span class="title_tool">HTML, CSS, JavaScript, jQuery, Three.js, Illustrator</span>
             </li>
 
-            <li>
+            <li class="title_list">
                 <a href="#">
                     <img src="./img/main/title_txt/secret.png" class="title_txt" alt="비밀의숲">
                     <div class="title_img"></div>
                 </a>
-                <span>HTML, CSS, JavaScript, jQuery, Three.js, Maya</span>
+                <span class="title_tool">HTML, CSS, JavaScript, jQuery, Three.js, Maya</span>
             </li>
            
         </ul>
 
         <div class="order_wrap">
-            <button class="up_arrow">&#xf106</button>
+            <button class="up_arrow" onclick=btn_up()>&#xf106</button>
             <span class="order_txt">
-                1 - 4
+                <span>1</span> - 4
             </span>
-            <button class="down_arrow">&#xf107</button>
+            <button class="down_arrow" onclick=btn_down()>&#xf107</button>
         </div>
     </section>
 
 
-
+    <script src="./vendor/jquery.min.js"></script>
+    <script src="./vendor/jquery.easing.min.js"></script>
     <script src="./script/main.js"></script>
 </body>
 

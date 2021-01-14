@@ -7,7 +7,7 @@ body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: 
 a{text-decoration: none; color: #454545;}
 
 
-header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed;}
+header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
 header > div{margin-left: 150px; line-height: 20px;}
 header > nav{margin-right: 150px;}
 header > nav > ul{}
@@ -18,11 +18,10 @@ header > nav > ul > li > a{}
 
 section{}
 section > ul{width: 100%; height: 100%;}
-section > ul > li{width: 100%; height: 100%; position: absolute; align-items: center; justify-content: center;opacity: 0; display: none; pointer-events: none;}
-section > ul > li.active_project{opacity: 1; display: flex; pointer-events: all;}
+section > ul > li{width: 100%; height: 100%;display: flex; position: absolute; align-items: center; justify-content: center; pointer-events: none;}
 section > ul > li > a{display: flex; align-items: center; justify-content: center; height: 100px;}
-section > ul > li > a > img{z-index: 2; position: absolute; transition: 1000ms;}
-section > ul > li > a > div{display: inline-block; width: 30vw; height: 30vw; background-position: center; background-size: cover; border-radius: 50%; transition: 1000ms; opacity: 0.4;}
+section > ul > li > a > img{z-index: 2; position: absolute; transition: 500ms;opacity: 0;}
+section > ul > li > a > div{display: inline-block; width: 30vw; height: 30vw; background-position: center; background-size: cover; border-radius: 50%; transition: 1000ms; opacity: 0;}
 section > ul > li:nth-child(1) > a > img{width: 60%;}
 section > ul > li:nth-child(1) > a > div{background-image: url('../img/main/title_img/amore.jpg');}
 section > ul > li:nth-child(2) > a > img{width: 55%;}
@@ -31,12 +30,19 @@ section > ul > li:nth-child(3) > a > img{width: 42%;}
 section > ul > li:nth-child(3) > a > div{background-image: url('../img/main/title_img/port.jpg');}
 section > ul > li:nth-child(4) > a > img{width: 28%;}
 section > ul > li:nth-child(4) > a > div{background-image: url('../img/main/title_img/secret.jpg');}
-section > ul > li > a:hover > div{opacity: 1;}
-section > ul > li > span{position: absolute; bottom: 100px;}
+section > ul > li > span{position: absolute; bottom: 100px; opacity: 0; transition: 500ms;}
+
+section > ul > li.active_project{pointer-events: all;}
+section > ul > li.active_project > a > img{opacity: 1;}
+section > ul > li.active_project > a > div{opacity: 0.4;}
+section > ul > li.active_project > a:hover > div{opacity: 1;}
+section > ul > li.active_project > span{opacity: 1;}
+
 
 
 section > div{position: absolute; right: 150px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center;}
-section > div > span.order_txt{margin: 40px 0;}
-section > div > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #454545; cursor: pointer;}
+section > div > span.order_txt{margin: 40px 0; pointer-events: none;}
+section > div > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #b0b0b0; cursor: pointer; transition: 500ms;}
+section > div > button:hover{color: #454545;}
 section > div > button.up_arrow{}
 section > div > button.down_arrow{}
