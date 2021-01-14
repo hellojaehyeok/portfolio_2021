@@ -1,11 +1,14 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-
-body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: #454545; overflow-x: hidden;}
+/* Common */
+body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: #454545;}
 a{text-decoration: none;}
 
+
+/* Project Cover */
 section.project_cover{width: 100vw; height: 100vh; background-position: center; background-size: cover;}
 section.project_cover > h1{color: #fff; font-size: 130px; position: absolute; left: 150px; pointer-events: none; animation: intro_title 1s forwards linear;}
 @keyframes intro_title{
@@ -13,6 +16,8 @@ section.project_cover > h1{color: #fff; font-size: 130px; position: absolute; le
     100%{opacity: 1; bottom: 250px;}
 }
 
+
+/* Txt Area */
 section.txt_area{font-family: 'Noto Sans KR';}
 section.txt_area > div{margin: 200px 0 0 20%; display: flex;}
 section.txt_area > div > div.txt_left{margin-right: 150px; font-size: 18px;}
@@ -26,6 +31,12 @@ section.txt_area > div > div.txt_right > a > span{font-family: fontello; margin-
 section.txt_area > div > div.txt_right > a:hover{color: #454545;}
 section.txt_area > div > div.txt_right > a:nth-child(2){margin-right: 50px;}
 
+
+/* Visual Area */
+section.visual_area{width: 100%; padding-top: 100px; text-align: center;}
+
+
+/* Next Area */
 section.next_area{font-family: 'Noto Sans KR';}
 section.next_area > div{margin: 270px 20%;display: flex;}
 section.next_area > div > a > img{width: 500px; border-radius: 30px;}
@@ -35,6 +46,8 @@ section.next_area > div > div > a > h2{margin: 25px 0 ; font-size: 36px; color: 
 section.next_area > div > div > ul{padding-left: 15px; border-left: 1px solid #727272; pointer-events: none;}
 section.next_area > div > div > ul > li{font-size: 18px; font-weight: 300; color: #727272; margin-bottom: 15px;}
 
+
+/* Footer */
 footer{width: 100%; height: 420px; display: flex; justify-content: center; color: #454545; font-family: 'Noto Sans KR'; font-weight: 400;}
 footer > div{width: 80%; height: 100%; border-top: 1px solid #727272; display: flex; align-items: center;justify-content: space-between;}
 footer > div > p{margin-left: 60px;font-size: 20px; line-height: 30px;}
@@ -44,3 +57,4 @@ footer > div > ul > li:first-child{margin-right: 120px;}
 footer > div > ul > li > ul{}
 footer > div > ul > li > ul > li{font-size: 20px; font-weight: 400; line-height: 30px; margin-bottom: 25px;}
 footer > div > ul > li > ul > li > span{color: #727272; font-size: 17px; font-weight: 300;}
+footer > div > ul > li > ul > li > a{color: #454545; text-decoration: underline;}
