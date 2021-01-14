@@ -34,15 +34,20 @@ section > ul > li > span{position: absolute; bottom: 100px; opacity: 0; transiti
 
 section > ul > li.active_project{pointer-events: all;}
 section > ul > li.active_project > a > img{opacity: 1;}
-section > ul > li.active_project > a > div{opacity: 0.4;}
+section > ul > li.active_project > a > div{opacity: 0.6;}
 section > ul > li.active_project > a:hover > div{opacity: 1;}
 section > ul > li.active_project > span{opacity: 1;}
 
+section > ul > li.click_project{pointer-events: none;}
+section > ul > li.click_project > a > img{opacity: 0;}
+section > ul > li.click_project > a > div{opacity: 1; width: 100vw; height: 100vh; border-radius: 0;}
+section > ul > li.click_project > span{opacity: 0;}
 
 
-section > div{position: absolute; right: 150px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center;}
+section > div{position: absolute; right: 150px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; transition: 500ms;}
 section > div > span.order_txt{margin: 40px 0; pointer-events: none;}
 section > div > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #b0b0b0; cursor: pointer; transition: 500ms;}
 section > div > button:hover{color: #454545;}
 section > div > button.up_arrow{}
 section > div > button.down_arrow{}
+section > div.click_project{opacity: 0; pointer-events: none;}
