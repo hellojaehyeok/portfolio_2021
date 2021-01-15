@@ -30,9 +30,9 @@ function btn_click(){
     order_count.html(cur_title + 1);
 }
 
-title_link.click(click_link);
+title_link.click(active_fullscreen);
 
-function click_link(e){
+function active_fullscreen (e){
     e.preventDefault();
     const el = e.currentTarget;
     title_list.eq(cur_title).addClass("click_project");
