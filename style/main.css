@@ -44,10 +44,23 @@ section > ul > li.click_project > a > div{opacity: 1; width: 100vw; height: 100v
 section > ul > li.click_project > span{opacity: 0;}
 
 
-section > div{position: absolute; right: 150px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; transition: 500ms;}
-section > div > span.order_txt{margin: 40px 0; pointer-events: none;}
-section > div > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #b0b0b0; cursor: pointer; transition: 500ms;}
-section > div > button:hover{color: #454545;}
-section > div > button.up_arrow{}
-section > div > button.down_arrow{}
+section > div.order_wrap{position: absolute; right: 150px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; transition: 500ms;}
+section > div.order_wrap > span.order_txt{margin: 40px 0; pointer-events: none;}
+section > div.order_wrap > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #b0b0b0; cursor: pointer; transition: 500ms;}
+section > div.order_wrap > button:hover{color: #454545;}
 section > div.click_project{opacity: 0; pointer-events: none;}
+
+section > div.order_wrap_horizontal{position: absolute; left: 50%; bottom: 150px; transform: translateX(-50%); display: flex; align-items: center; transition: 500ms; opacity: 0; pointer-events: none;}
+section > div.order_wrap_horizontal > span.order_txt{margin: 0 40px; pointer-events: none;}
+section > div.order_wrap_horizontal > button{width: 30px; height: 30px; font-size: 25px; font-family: fontello; margin: 0; padding: 0; background: transparent; border: 0px; outline: none; color: #b0b0b0; cursor: pointer; transition: 500ms;}
+section > div.order_wrap_horizontal > button:hover{color: #454545;}
+
+@media all and (max-width:1250px){
+    header{font-size: 16px;}
+    header > div{margin-left: 50px;}
+    header > nav{margin-right: 50px;}
+    header > nav > ul > li:first-child{margin-right: 60px;}
+    
+    section > div.order_wrap{opacity: 0; pointer-events: none;}
+    section > div.order_wrap_horizontal{opacity: 1; pointer-events: all;}
+}
