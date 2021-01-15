@@ -13,7 +13,9 @@ header > nav{margin-right: 150px;}
 header > nav > ul{}
 header > nav > ul > li{float: left;}
 header > nav > ul > li:first-child{margin-right: 60px;}
-header > nav > ul > li > a{}
+header > nav > ul > li > a{position: relative;}
+header > nav > ul > li > a::after{position: absolute; content: ""; display: inline-block; width: 0; height: 2px; background-color: #454545; border-radius: 1px; bottom: -5px; left: 0; transition: 500ms;}
+header > nav > ul > li > a:hover::after{width: 100%;}
 
 
 section{}
@@ -60,7 +62,9 @@ section > div.order_wrap_horizontal > button:hover{color: #454545;}
     header > div{margin-left: 50px;}
     header > nav{margin-right: 50px;}
     header > nav > ul > li:first-child{margin-right: 60px;}
-    
+
+    section > ul > li > a > div{width: 50vw; height: 50vw;}
+
     section > div.order_wrap{opacity: 0; pointer-events: none;}
     section > div.order_wrap_horizontal{opacity: 1; pointer-events: all;}
 }
