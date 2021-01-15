@@ -1,7 +1,5 @@
 
 
-
 section.project_cover{background-image: url('../img/main/title_img/amore.jpg');}
 
-section.visual_area{width: 100%; padding-top: 100px; text-align: center;}
-section.visual_area > img{width: 60%; border-radius: 30px;}
+section.visual_area > img {width: 60%; border-radius: 30px;}
