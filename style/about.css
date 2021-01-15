@@ -1,1 +1,15 @@
 
+
+div.introduce_wrap{width: 80%; margin: 360px auto 0; }
+div.introduce_wrap > div:nth-child(2){text-align: right; margin: 130px 0;}
+div.introduce_wrap > div:nth-child(2) > div{text-align: left; display: inline-block;}
+div.introduce_wrap h1{font-size: 30px; font-weight: 700; line-height: 45px;}
+div.introduce_wrap p{font-family: 'Noto Sans KR'; font-size: 18px; font-weight: 300; line-height: 30px;margin: 10px 0 0 30px;}
+
+ul.list_wrap{width: 80%; margin: 230px auto; display: flex;font-family: 'Noto Sans KR'; }
+ul.list_wrap > li{width: 25%;}
+ul.list_wrap > li > ul{}
+ul.list_wrap > li > ul > h2{color: #727272; font-size: 16px; font-weight: 300; margin-bottom: 15px;}
+ul.list_wrap > li > ul > li{color: #454545; font-size: 18px; font-weight: 400; margin-bottom: 20px;}
+ul.list_wrap > li > ul > li > a{color: #454545;}
+ul.list_wrap > li > ul > li.margin_bottom{margin-bottom: 30px;}
