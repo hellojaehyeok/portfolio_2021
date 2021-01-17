@@ -18,4 +18,16 @@ section.visual_area > div.contact > img{width: 70%;}
 section.visual_area > div.lab_page{width: 60%; text-align: center; margin: 0 auto;}
 section.visual_area > div.lab_page > img{width: 100%;}
 
-
+@media all and (max-width: 500px){
+    section.visual_area h2{font-size: 20px;}
+    section.visual_area > div.main_project{width: 90%;flex-direction: column;}
+    section.visual_area > div > div.main_page{width: 100%;margin-bottom: 100px;}
+    section.visual_area > div > div.project_page{width: 100%; text-align: left; margin-top: 0%;}
+    
+    section.visual_area > div.about_page{width: 90%; margin: 100px auto 0;}
+    section.visual_area > div.about_page > img{width: 100%;}
+    section.visual_area > div.contact{width: 90%; text-align: left; margin: 100px auto 0;}
+    section.visual_area > div.contact > img{width: 100%;}
+    section.visual_area > div.lab_page{width: 90%; text-align: left;margin: 100px auto 0;}
+    section.visual_area > div.lab_page > img{width: 100%;}
+}

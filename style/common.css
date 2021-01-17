@@ -65,3 +65,43 @@ footer > div > ul > li > ul{}
 footer > div > ul > li > ul > li{font-size: 20px; font-weight: 400; line-height: 30px; margin-bottom: 25px;}
 footer > div > ul > li > ul > li > span{color: #727272; font-size: 17px; font-weight: 300;}
 footer > div > ul > li > ul > li > a{color: #454545; text-decoration: underline;}
+
+@media all and (max-width:1550px){
+    footer > div{flex-direction: column; justify-content: center; text-align: center;}
+    footer > div > p{margin: 0 0 50px;font-size: 20px; line-height: 30px;}
+    footer > div > ul{margin-right: 0px; display: flex;} 
+}
+
+@media all and (max-width:1250px){
+    section.project_cover > h1{left: 50%; transform: translateX(-50%);font-size: 60px;}
+
+    section.txt_area > div{flex-direction: column;}
+    section.txt_area > div > div.txt_left{display: flex;flex-direction: column; margin-bottom: 30px; width: 100%;}
+    section.txt_area > div > div.txt_left > ul{padding-left: 0px; border-left: 0px; margin: 0px;}
+    section.txt_area > div > div.txt_left > ul > li{font-size: 16px; margin: 20px 10px 0 0; float: left;}
+    section.txt_area > div > div.txt_right{font-size: 16px;}
+    section.txt_area > div > div.txt_right > p{line-height: 25px;}
+
+    section.next_area > div{flex-direction: column;}
+    section.next_area > div > a > img{width: 100%;}
+    section.next_area > div > div{margin:50px 0 0;}
+}
+
+@media all and (max-width: 500px){
+    section.project_cover > h1{left: 50%; transform: translateX(-50%);font-size: 30px;}
+
+    section.txt_area > div{margin: 100px 10% 0;}
+
+    section.next_area > div{margin: 100px 5%; }
+    section.next_area > div{flex-direction: column;}
+    section.next_area > div > a > img{width: 100%;}
+    section.next_area > div > div{margin:50px 0 0;}
+
+    footer{width: 100%; height: 100%; display: inline-flex;}
+    footer > div{padding-top: 50px; margin-bottom: 50px;}
+    footer > div > p{margin: 0 0 50px; font-size: 16px;}
+    footer > div > ul{flex-direction: column;}
+    footer > div > ul > li:first-child{margin-right: 0px;}
+    footer > div > ul > li > ul > li{font-size: 16px; margin-bottom: 30px;}
+    footer > div > ul > li > ul > li > span{font-size: 16px;}
+}
