@@ -12,9 +12,9 @@ section > ul > li > div{}
 section > ul > li > div > a.title{color: #454545;}
 section > ul > li > div > a.title > h2{ font-size: 20px; font-weight: 500;}
 section > ul > li > div > p{font-size: 18px; font-weight: 300; line-height: 30px; margin: 15px 0 30px;}
-section > ul > li > div > a.link{color: #727272; font-size: 18px; margin-bottom: 20px; display: inline-block; transition: 500ms;}
+section > ul > li > div > a.link{color: #727272; font-size: 18px; font-weight: 400; margin-bottom: 20px; display: inline-block; transition: 500ms;}
 section > ul > li > div > a.link > span{font-family: fontello;}
-section > ul > li > div > a.link:hover{color: #454545;}
+section > ul > li > div > a.link:hover{color: #454545; letter-spacing: 1px;}
 
 @media all and (max-width:800px){
     section > h1{font-size: 30px;}

@@ -30,9 +30,9 @@ section.txt_area > div > div.txt_left > ul{padding-left: 20px; border-left: 1px 
 section.txt_area > div > div.txt_left > ul > li{color: #727272; font-weight: 300; margin-bottom: 20px;}
 section.txt_area > div > div.txt_right{font-size: 18px; font-weight: 400;}
 section.txt_area > div > div.txt_right > p{color: #454545; line-height: 27px; margin-bottom: 25px;}
-section.txt_area > div > div.txt_right > a{color: #a4a4a4; transition: 500ms;}
+section.txt_area > div > div.txt_right > a{color: #a4a4a4; transition: 500ms; font-weight: 400;}
 section.txt_area > div > div.txt_right > a > span{font-family: fontello; margin-right: 10px;}
-section.txt_area > div > div.txt_right > a:hover{color: #454545;}
+section.txt_area > div > div.txt_right > a:hover{color: #454545; letter-spacing: 1px;}
 section.txt_area > div > div.txt_right > a:nth-child(2){margin-right: 50px;}
 
 
