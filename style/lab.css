@@ -5,13 +5,24 @@ section > h1{font-size: 50px;}
 section > p{font-size: 20px; line-height: 30px; font-family: 'Noto Sans KR'; margin: 20px 0 100px;}
 
 section > ul{ font-family: 'Noto Sans KR';}
-section > ul > li{display: flex; margin-bottom: 100px;}
-section > ul > li > a{width: 50%;}
-section > ul > li > a > img{width: 100%; border-radius: 30px;}
-section > ul > li > div{margin-left: 50px;}
+section > ul > li{display: flex; margin-bottom: 100px; flex-wrap: wrap; justify-content: space-between;}
+section > ul > li > a{width: 50%; margin-bottom: 50px;}
+section > ul > li > a > img{width: 500px; border-radius: 30px;}
+section > ul > li > div{}
 section > ul > li > div > a.title{color: #454545;}
 section > ul > li > div > a.title > h2{ font-size: 20px; font-weight: 500;}
 section > ul > li > div > p{font-size: 18px; font-weight: 300; line-height: 30px; margin: 15px 0 30px;}
-section > ul > li > div > a.link{color: #727272; margin-bottom: 20px; display: inline-block; transition: 500ms;}
+section > ul > li > div > a.link{color: #727272; font-size: 18px; margin-bottom: 20px; display: inline-block; transition: 500ms;}
 section > ul > li > div > a.link > span{font-family: fontello;}
 section > ul > li > div > a.link:hover{color: #454545;}
+
+@media all and (max-width:800px){
+    section > h1{font-size: 30px;}
+    section > p{font-size: 18px;}
+
+    section > ul > li > a{width: 100%; border: 1px solid salmon;}
+    section > ul > li > a > img{width: 100%;}
+    section > ul > li > div > a.title > h2{ font-size: 18px;}
+    section > ul > li > div > p{font-size: 16px;}
+    section > ul > li > div > a.link{font-size: 16px;}
+}
