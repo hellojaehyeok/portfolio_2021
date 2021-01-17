@@ -1,5 +1,29 @@
 
 
+
+
+
+// Header Btn
+function click_header_btn(){
+    const header_btn = $("a.header_link");
+    const section = $("section");
+    console.log(section);
+    header_btn.click(header_btn_click);
+
+    function header_btn_click(e){
+        e.preventDefault();
+        const el = e.currentTarget;
+        section.css({"opacity" : 0, "transition" : "800ms"})
+        setTimeout(()=>{
+            location.href = el.getAttribute("href");
+        }, 800)
+    }
+};
+
+
+
+
+// Project Next Btn
 const next_btn = $("a.next_btn");
 const next_arrow = $("span.next_arrow");
 
@@ -11,3 +35,9 @@ function hover_next_btn(){
 function out_next_btn(){
     next_arrow.removeClass("active_next");
 }
+
+
+function init(){
+    click_header_btn();
+}
+init();
