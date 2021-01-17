@@ -9,6 +9,7 @@ const title_tool = $("span.title_tool");
 const order_wrap = $("div.order_wrap");
 const order_count = $("span.order_txt > span");
 let cur_title = 0;
+let is_scroll = false;
 
 function btn_up(){
     cur_title--;
@@ -40,4 +41,22 @@ function active_fullscreen (e){
     setTimeout(()=>{
         location.href = el.getAttribute("href");
     }, 1000)
+}
+
+$("body").on('mousewheel', scroll_event);
+function scroll_event(e){
+    if(is_scroll) return;
+    let cur_wheel = e.originalEvent.wheelDelta;
+    is_scroll = true;
+    setTimeout(()=>{
+        is_scroll = false;
+    }, 800)
+
+    if(cur_wheel > 0){
+        cur_title--;
+        btn_click();
+    }else{
+        cur_title++;
+        btn_click();
+    }
 }
