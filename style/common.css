@@ -6,9 +6,18 @@
 /* --- Common --- */
 body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: #454545; overflow-x: hidden;}
 a{text-decoration: none;}
+body.is_change{transition: 800ms; opacity: 0;}
 
-
-
+header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
+header > div{margin-left: 150px; line-height: 20px;}
+header > div > a{color: #454545;}
+header > nav{margin-right: 150px;}
+header > nav > ul{}
+header > nav > ul > li{float: left;}
+header > nav > ul > li:first-child{margin-right: 60px;}
+header > nav > ul > li > a{position: relative; color: #454545;}
+header > nav > ul > li > a::after{position: absolute; content: ""; display: inline-block; width: 0; height: 2px; background-color: #454545; border-radius: 1px; bottom: -5px; left: 0; transition: 500ms;}
+header > nav > ul > li > a:hover::after{width: 100%;}
 
 
 /* --- Project Page --- */
@@ -73,6 +82,11 @@ footer > div > ul > li > ul > li > a{color: #454545; text-decoration: underline;
 }
 
 @media all and (max-width:1250px){
+    header{font-size: 16px;}
+    header > div{margin-left: 50px;}
+    header > nav{margin-right: 50px;}
+    header > nav > ul > li:first-child{margin-right: 60px;}
+
     section.project_cover > h1{left: 50%; transform: translateX(-50%);font-size: 60px;}
 
     section.txt_area > div{flex-direction: column;}

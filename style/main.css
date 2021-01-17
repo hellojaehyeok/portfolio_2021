@@ -5,20 +5,14 @@
 
 body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: #454545;}
 a{text-decoration: none; color: #454545;}
+header{animation: intro_Ani 1.5s linear forwards;}
+section{animation: intro_Ani 1.5s linear forwards;}
+@keyframes intro_Ani{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 
-header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
-header > div{margin-left: 150px; line-height: 20px;}
-header > nav{margin-right: 150px;}
-header > nav > ul{}
-header > nav > ul > li{float: left;}
-header > nav > ul > li:first-child{margin-right: 60px;}
-header > nav > ul > li > a{position: relative;}
-header > nav > ul > li > a::after{position: absolute; content: ""; display: inline-block; width: 0; height: 2px; background-color: #454545; border-radius: 1px; bottom: -5px; left: 0; transition: 500ms;}
-header > nav > ul > li > a:hover::after{width: 100%;}
-
-
-section{}
 section > ul{width: 100%; height: 100%;}
 section > ul > li{width: 100%; height: 100%;display: flex; position: absolute; align-items: center; justify-content: center; pointer-events: none;}
 section > ul > li > a{display: flex; align-items: center; justify-content: center; height: 100px;}
@@ -58,11 +52,6 @@ section > div.order_wrap_horizontal > button{width: 30px; height: 30px; font-siz
 section > div.order_wrap_horizontal > button:hover{color: #454545;}
 
 @media all and (max-width:1250px){
-    header{font-size: 16px;}
-    header > div{margin-left: 50px;}
-    header > nav{margin-right: 50px;}
-    header > nav > ul > li:first-child{margin-right: 60px;}
-
     section > ul > li > a > div{width: 50vw; height: 50vw;}
 
     section > div.order_wrap{opacity: 0; pointer-events: none;}

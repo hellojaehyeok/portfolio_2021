@@ -1,6 +1,17 @@
 
 
-section{color: #454545; width: 60%; margin: 300px auto 0;}
+header{animation: intro_Ani 1.5s linear forwards;}
+section{animation: intro_Ani 1.5s linear forwards;}
+@keyframes intro_Ani{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+section{color: #454545; width: 60%; padding: 360px; margin: 0 auto;animation: intro_Ani 1.5s linear forwards;}
+@keyframes intro_Ani{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 section > h1{font-size: 50px;}
 section > p{font-size: 20px; line-height: 30px; font-family: 'Noto Sans KR'; margin: 20px 0 100px;}
 

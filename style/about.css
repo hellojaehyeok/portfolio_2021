@@ -1,6 +1,13 @@
 
+header{animation: intro_Ani 1.5s linear forwards;}
+section{animation: intro_Ani 1.5s linear forwards;}
+@keyframes intro_Ani{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
-div.introduce_wrap{width: 80%; margin: 360px auto 0; }
+
+div.introduce_wrap{width: 80%; padding-top: 360px; margin: 0 auto ; }
 div.introduce_wrap > div:nth-child(2){text-align: right; margin: 130px 0;}
 div.introduce_wrap > div:nth-child(2) > div{text-align: left; display: inline-block;}
 div.introduce_wrap h1{font-size: 30px; font-weight: 700; line-height: 45px;}

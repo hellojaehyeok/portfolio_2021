@@ -6,14 +6,13 @@
 // Header Btn
 function click_header_btn(){
     const header_btn = $("a.header_link");
-    const section = $("section");
-    console.log(section);
+    const body = $("body");
     header_btn.click(header_btn_click);
 
     function header_btn_click(e){
         e.preventDefault();
         const el = e.currentTarget;
-        section.css({"opacity" : 0, "transition" : "800ms"})
+        body.addClass("is_change");
         setTimeout(()=>{
             location.href = el.getAttribute("href");
         }, 800)
