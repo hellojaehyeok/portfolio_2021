@@ -9,9 +9,10 @@ a{text-decoration: none;}
 body.is_change{transition: 800ms; opacity: 0;}
 
 header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
-header{}
+header a{transition: 500ms;}
 header > div{margin-left: 150px; line-height: 20px;}
 header > div > a{color: #454545;}
+header > div > a:hover{letter-spacing: 2px;}
 header > nav{margin-right: 150px;}
 header > nav > ul{}
 header > nav > ul > li{float: left;}

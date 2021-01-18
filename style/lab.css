@@ -7,7 +7,7 @@ section{animation: intro_Ani 1.5s linear forwards;}
     100%{opacity: 1;}
 }
 
-section{color: #454545; width: 60%; padding: 360px; margin: 0 auto;animation: intro_Ani 1.5s linear forwards;}
+section{color: #454545; width: 60%; padding-top: 360px; margin: 0 auto;animation: intro_Ani 1.5s linear forwards;}
 @keyframes intro_Ani{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -28,10 +28,11 @@ section > ul > li > div > a.link > span{font-family: fontello;}
 section > ul > li > div > a.link:hover{color: #454545; letter-spacing: 1px;}
 
 @media all and (max-width:800px){
+    section{width: 80%;}
     section > h1{font-size: 30px;}
     section > p{font-size: 18px;}
 
-    section > ul > li > a{width: 100%; border: 1px solid salmon;}
+    section > ul > li > a{width: 100%;}
     section > ul > li > a > img{width: 100%;}
     section > ul > li > div > a.title > h2{ font-size: 18px;}
     section > ul > li > div > p{font-size: 16px;}
