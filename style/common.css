@@ -5,8 +5,13 @@
 
 /* --- Common --- */
 body{background: #e7e7e7; font-family: 'Nanum Myeongjo', 'Noto Sans KR'; color: #454545; overflow-x: hidden;}
-a{text-decoration: none;}
 body.is_change{transition: 800ms; opacity: 0;}
+a{text-decoration: none;}
+
+::selection {
+    background-color: #c9c9c9;
+    color: #454545;
+}
 
 header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
 header a{transition: 500ms;}
