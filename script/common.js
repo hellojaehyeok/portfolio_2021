@@ -19,7 +19,19 @@ function click_header_btn(){
     }
 };
 
-
+function project_header_color(){
+    const section_cover = $("section.white_header");
+    if(section_cover.length == 0)return;
+    const header = $("header");
+    $(window).scroll(()=>{
+        let cur_scroll = $(document).scrollTop();
+        if(cur_scroll + 80 > section_cover.innerHeight()){
+            header.removeClass("is_white");
+        }else{
+            header.addClass("is_white");
+        }
+    })
+}
 
 
 // Project Next Btn
@@ -38,5 +50,6 @@ function out_next_btn(){
 
 function init(){
     click_header_btn();
+    project_header_color();
 }
 init();

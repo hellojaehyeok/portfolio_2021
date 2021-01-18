@@ -9,6 +9,7 @@ a{text-decoration: none;}
 body.is_change{transition: 800ms; opacity: 0;}
 
 header{display: flex; height: 80px; width: 100%; align-items: flex-end; justify-content: space-between; font-size: 18px; position: fixed; z-index: 99;}
+header{}
 header > div{margin-left: 150px; line-height: 20px;}
 header > div > a{color: #454545;}
 header > nav{margin-right: 150px;}
@@ -18,6 +19,8 @@ header > nav > ul > li:first-child{margin-right: 60px;}
 header > nav > ul > li > a{position: relative; color: #454545;}
 header > nav > ul > li > a::after{position: absolute; content: ""; display: inline-block; width: 0; height: 2px; background-color: #454545; border-radius: 1px; bottom: -5px; left: 0; transition: 500ms;}
 header > nav > ul > li > a:hover::after{width: 100%;}
+header.is_white a{color: #fff;}
+header.is_white a::after{background-color: #fff;}
 
 
 /* --- Project Page --- */
