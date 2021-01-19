@@ -51,7 +51,7 @@ JavaScript
 
 헤더에는 lab, about 페이지로 갈수있는 네비게이션과 로고를 넣었습니다.
 
-<img src="./img/readme/main.jpg" width="100%">
+
 
 ### Project Page
 
@@ -60,17 +60,14 @@ JavaScript
 하단에는 다음 프로젝트의 간단한 소개와 함께 넘어갈 수 있도록 하였고,     
 푸터에는 저의 정보를 입력하여 연락할 수 있게 제작하였습니다.     
 
-<img src="./img/readme/project.jpg" width="100%">
-<img src="./img/readme/project.jpg_2" width="100%">
-<img src="./img/readme/project.jpg_3" width="100%">
+
 
 ### About Page
 
 제 프로필 페이지입니다.     
 크게 두 개의 단락으로 나누었고 위쪽에는 제 소개를 아래에는 저의 연락처 및 정보를 기재하였습니다.     
 
-<img src="./img/readme/about.jpg" width="100%">
-<img src="./img/readme/about.jpg_2" width="100%">
+
 
 ### Lab Page
 
@@ -78,7 +75,6 @@ Three.js를 활용하여 제작하였던 여러 작업들을 모아둔 곳입니
 메인 페이지와 다르게 리스트 형식으로 볼 수 있게 하였고 이미지 옆에는 간단한 소개와 함께     
 사이트, 깃허브 링크를 연결해 놓았습니다.     
 
-<img src="./img/readme/lab.jpg" width="100%">
 
 
 송재혁입니다.
