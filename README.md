@@ -61,8 +61,8 @@ JavaScript
 푸터에는 저의 정보를 입력하여 연락할 수 있게 제작하였습니다.     
 
 <img src="./img/readme/project.jpg" width="100%">
-<img src="./img/readme/project.jpg_2" width="100%">
-<img src="./img/readme/project.jpg_3" width="100%">
+<img src="./img/readme/project_2.jpg" width="100%">
+<img src="./img/readme/project_3.jpg" width="100%">
 
 ### About Page
 
@@ -70,7 +70,7 @@ JavaScript
 크게 두 개의 단락으로 나누었고 위쪽에는 제 소개를 아래에는 저의 연락처 및 정보를 기재하였습니다.     
 
 <img src="./img/readme/about.jpg" width="100%">
-<img src="./img/readme/about.jpg_2" width="100%">
+<img src="./img/readme/about_2.jpg" width="100%">
 
 ### Lab Page
 
