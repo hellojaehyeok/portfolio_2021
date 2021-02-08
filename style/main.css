@@ -18,14 +18,16 @@ section > ul > li{width: 100%; height: 100%;display: flex; position: absolute; a
 section > ul > li > a{display: flex; align-items: center; justify-content: center; height: 100px;}
 section > ul > li > a > img{z-index: 2; position: absolute; transition: 500ms;opacity: 0;}
 section > ul > li > a > div{display: inline-block; width: 30vw; height: 30vw; background-position: center; background-size: cover; border-radius: 50%; transition: 1000ms; opacity: 0;}
-section > ul > li:nth-child(1) > a > img{width: 60%;}
-section > ul > li:nth-child(1) > a > div{background-image: url('../img/main/title_img/amore.jpg');}
-section > ul > li:nth-child(2) > a > img{width: 55%;}
-section > ul > li:nth-child(2) > a > div{background-image: url('../img/main/title_img/inter.png');}
-section > ul > li:nth-child(3) > a > img{width: 42%;}
-section > ul > li:nth-child(3) > a > div{background-image: url('../img/main/title_img/port.jpg');}
-section > ul > li:nth-child(4) > a > img{width: 28%;}
-section > ul > li:nth-child(4) > a > div{background-image: url('../img/main/title_img/secret.jpg');}
+section > ul > li:nth-child(1) > a > img{width: 35%;}
+section > ul > li:nth-child(1) > a > div{background-image: url('../img/main/title_img/youtube.png');}
+section > ul > li:nth-child(2) > a > img{width: 60%;}
+section > ul > li:nth-child(2) > a > div{background-image: url('../img/main/title_img/amore.jpg');}
+section > ul > li:nth-child(3) > a > img{width: 55%;}
+section > ul > li:nth-child(3) > a > div{background-image: url('../img/main/title_img/inter.png');}
+section > ul > li:nth-child(4) > a > img{width: 42%;}
+section > ul > li:nth-child(4) > a > div{background-image: url('../img/main/title_img/port.jpg');}
+section > ul > li:nth-child(5) > a > img{width: 28%;}
+section > ul > li:nth-child(5) > a > div{background-image: url('../img/main/title_img/secret.jpg');}
 section > ul > li > span{position: absolute; bottom: 100px; opacity: 0; transition: 500ms;}
 
 section > ul > li.active_project{pointer-events: all;}

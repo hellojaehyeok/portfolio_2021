@@ -20,11 +20,11 @@ function btn_down(){
     btn_click();
 }
 function btn_click(){
-    if(cur_title > 3){
+    if(cur_title > 4){
         cur_title = 0;
     }
     if(cur_title < 0){
-        cur_title = 3;
+        cur_title = 4;
     }
     title_list.removeClass("active_project");
     title_list.eq(cur_title).addClass("active_project");
