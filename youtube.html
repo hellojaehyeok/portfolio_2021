@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/fontello.css">
     <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/secret.css">
+    <link rel="stylesheet" href="./style/youtube.css">
     <title>SJH Portfolio</title>
 </head>
 
 <body>
+
     
-    <header class="is_white">
+    <header>
         <div class="logo">
             <a class="header_link" href="./main.html">
                 Song <br />
@@ -29,71 +30,68 @@
             </ul>
         </nav>
     </header>
-
-    <section class="project_cover white_header">
-        <h1>SECRET</h1>
+    
+    <section class="project_cover">
+        <h1>YOUTUBE</h1>
     </section>
+
 
     <section class="txt_area">
         <div class="txt_wrap">
             <div class="txt_left">
-                <span>2020 . 09 - 2020 . 12</span>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Three.js</li>
-                    <li>Maya</li>
-                </ul>
-            </div>
-
-            <div class="txt_right">
-                <p>
-                    드라마 “비밀의 숲” 웹사이트입니다.<br />
-                    정보 전달이 목적이 아닌 사용자에게 새로운 경험을 주고자 게임 형식으로 제작하였습니다.<br />
-                    스토리 형식으로 진행되었으며 W, A, S, D, Shift로 메인 오브젝트를 컨트롤 가능하게 만들었습니다.<br />
-                    사용자는 맵을 돌아다니며 곳곳에 있는 NPC들을 만나 단서를 수집하고 건물들에 들어가 용의자를<br />
-                    모읍니다. 그 후 중앙에 있는 감옥에서 진범을 찾아내면 게임은 끝납니다. 이 외에도 검거에 실패 하였을 때,<br />
-                    주인공이 죽었을 때 총 3개의 엔딩을 제작하였습니다. 조명과 안개를 어둡게 하고 시야를 좁게 만들어<br />
-                    어두운 분위기를 연출했으며 미디어쿼리와 자바스크립트를 사용하여 터치 기기일 때는 게임패드를<br />
-                    활성화시켜 키보드가 없을 때도 플레이 가능하게 만들었습니다.  <br />
-                    범인은 <span>서동재</span> 입니다. 드래그하시면 보입니다.
-                </p>
-                <a target="_blank" href="https://sjhsecret.github.io/secret.html"><span>&#xf105</span> 웹사이트</a>
-                <a target="_blank" href="https://github.com/hellojaehyeok/Secret"><span>&#xf105</span> 깃허브</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="visual_area">
-        <ul>
-            <li><img src="./img/project/secret/scene_0.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_1.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_2.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_3.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_4.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_5.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_6.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_7.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_8.jpg" alt="비밀의숲 웹사이트 장면"></li>
-            <li><img src="./img/project/secret/scene_9.jpg" alt="비밀의숲 웹사이트 장면"></li>
-        </ul>
-    </section>
-
-
-    <section class="next_area">
-        <div class="next_wrap">
-            <a class="next_btn" href="./amorepacific.html"><img src="./img/main/title_img/amore.jpg" alt="유튜브"></a>
-            <div class="next_txt_wrap">
-                <span>Next Project</span>
-                <a class="next_btn" href="./amorepacific.html"><span class="next_arrow">&#xf105</span><h2>YOUTUBE</h2></a>
+                <span>2021 . 02</span>
                 <ul>
                     <li>HTML</li>
                     <li>PostCSS</li>
                     <li>JavaScript</li>
                     <li>React</li>
                     <li>Postman</li>
+                </ul>
+            </div>
+
+            <div class="txt_right">
+                <p>
+                    YouTube Data API와 React Hook을 활용하여 만든 유튜브 웹페이지입니다. <br />
+                    메인 페이지에는 검색창과 함께 인기 동영상을 보여주었습니다. 검색 시에는 <br />
+                    24개의 비디오 리스트들을 보여주며 클릭을 할 경우 해당 아이템의 정보를 받아와 <br />
+                    동영상과 정보들을 보여주었습니다. React Router를 통해 페이지 간 이동을  <br />
+                    할 수 있게 하였으며 PostCSS를 통해 크로스 브라우징이 가능하도록 만들었습니다. <br />
+                    YouTube에서 정보를 받아올 때는 Postman을 활용하여 fetch를 손쉽게 받아왔고, <br />
+                    그 외에도 axios를 활용하여 정보를 받아오기도 하였습니다. <br />
+                </p>
+                <a target="_blank" href="#"><span>&#xf105</span> 웹사이트</a>
+                <a target="_blank" href="https://github.com/hellojaehyeok/React_Youtube"><span>&#xf105</span> 깃허브</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="visual_area">
+        <img src="./img/project/youtube/main.jpg" alt="유튜브 웹사이트 이미지">
+        <img src="./img/project/youtube/search.jpg" alt="유튜브 웹사이트 이미지">
+        <img src="./img/project/youtube/video.png" alt="유튜브 웹사이트 이미지">
+        <div>
+            <img class="mediaImg" src="./img/project/youtube/mainMedia.png" alt="유튜브 웹사이트 이미지">
+            <img class="mediaImg" src="./img/project/youtube/searchMedia.png" alt="유튜브 웹사이트 이미지">
+        </div>
+        <div>
+            <img class="mediaImg" src="./img/project/youtube/videoMedia.png" alt="유튜브 웹사이트 이미지">
+            <img class="mediaImg" src="./img/project/youtube/videoMedia_2.png" alt="유튜브 웹사이트 이미지">
+        </div>
+    </section>
+
+
+    <section class="next_area">
+        <div class="next_wrap">
+            <a class="next_btn" href="./interstellar.html"><img src="./img/main/title_img/amore.jpg" alt="아모레퍼시픽"></a>
+            <div class="next_txt_wrap">
+                <span>Next Project</span>
+                <a class="next_btn" href="./interstellar.html"><span class="next_arrow">&#xf105</span><h2>AMOREPACIFIC</h2></a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Three.js</li>
+                    <li>Illustrator</li>
                 </ul>
             </div>
         </div>
@@ -138,7 +136,6 @@
 
     <script src="./vendor/jquery.min.js"></script>
     <script src="./script/common.js"></script>
-
 </body>
 
 </html>
