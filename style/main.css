@@ -20,9 +20,9 @@ section > ul > li > a{display: flex; align-items: center; justify-content: cente
 section > ul > li > a > div.title_txt{position: absolute; font-size: 100px; opacity: 0; z-index: 2;}
 section > ul > li > a > div.title_img{display: inline-block; width: 30vw; height: 30vw; background-position: center; background-size: cover; border-radius: 50%; transition: 1000ms; opacity: 0;}
 section > ul > li:nth-child(1) > a > div.title_img{background-image: url('../img/main/title_img/youtube.png');}
-section > ul > li:nth-child(2) > a > div.title_img{background-image: url('../img/main/title_img/amore.jpg');}
-section > ul > li:nth-child(3) > a > div.title_img{background-image: url('../img/main/title_img/inter.png');}
-section > ul > li:nth-child(4) > a > div.title_img{background-image: url('../img/main/title_img/port.jpg');}
+section > ul > li:nth-child(2) > a > div.title_img{background-image: url('../img/main/title_img/inter.png');}
+section > ul > li:nth-child(3) > a > div.title_img{background-image: url('../img/main/title_img/port.jpg');}
+section > ul > li:nth-child(4) > a > div.title_img{background-image: url('../img/main/title_img/amore.jpg');}
 section > ul > li:nth-child(5) > a > div.title_img{background-image: url('../img/main/title_img/secret.jpg');}
 section > ul > li > span{position: absolute; bottom: 100px; opacity: 0; transition: 500ms;}
 
