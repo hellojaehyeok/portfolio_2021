@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0;}
+div#obj{position: fixed; z-index: 1; transition: 800ms;}
+
+form{position: fixed; z-index: 2; bottom: 5%; left: 50%; transform: translateX(-50%);} 
+input#txt{
+    width: 1000px; height: 200px; font-size: 100px;border: 0; border-bottom: 1px solid rgb(112, 160, 250); outline: 0;
+    vertical-align: bottom; line-height: 200px; background: transparent;
+}
+button#btn{pointer-events: none; opacity: 0; display: none;}
